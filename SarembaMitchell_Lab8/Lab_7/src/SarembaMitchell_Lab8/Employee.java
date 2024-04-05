@@ -46,8 +46,6 @@ public class Employee extends Person {
         System.out.println("Bye!");
     }
 
-    
-
     @Override
     public String toString() {
         return person.toString() + "\nEmployee ID: " + this.employeeId + "\nJob Title: " + this.jobTitle;
