@@ -4,15 +4,12 @@ import SarembaMitchell_Lab7.Person;
 import java.util.Scanner;
 
 public class Employee extends Person {
-    
-    Person person;
-    int employeeId;
+   
     String jobTitle;
 
-    public Employee(String firstName, String lastName, int id, String jobTitle) {
-        super(firstName, lastName);
+    public Employee(String firstName, String lastName, String employeeId, String jobTitle) {
+        super(employeeId, firstName, lastName);
 
-        this.employeeId = id;
         this.jobTitle = jobTitle;
     }
 
@@ -46,8 +43,14 @@ public class Employee extends Person {
         System.out.println("Bye!");
     }
 
+    // @Override
+    // public void sayHelloTo(Employee coworker) {
+    //     super.sayHelloTo(coworker.firstName);
+    // }
+    
+
     @Override
     public String toString() {
-        return person.toString() + "\nEmployee ID: " + this.employeeId + "\nJob Title: " + this.jobTitle;
+        return super.toString() + "\nEmployee ID: " + this.ID + "\nJob Title: " + this.jobTitle;
     }
 }
