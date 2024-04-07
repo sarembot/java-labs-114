@@ -2,7 +2,7 @@ package SarembaMitchell_Lab8;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-import SarembaMitchell_Lab7.Person;
+import SarembaMitchell_Lab7.*;
 
 /**
  * Student
@@ -13,15 +13,17 @@ public class Student extends Person {
     public double credits;
     public double studyHours;
     public ArrayList<Integer> grades;
+    // public AcademicRecord record; 
 
-    public Student(String firstName, String lastName, String cNumber, int year, String major) {
+    public Student(String firstName, String lastName, String cNumber, String major) {
         super(cNumber, firstName, lastName);
 
-        this.year = year;
+        this.year = 1;
         this.major = major;
         this.credits = 0;
         this.studyHours = 0;
         this.grades = new ArrayList<Integer>();
+        
     }
 
     public double study() {
@@ -38,8 +40,6 @@ public class Student extends Person {
     public void completeCourse() {
         int grade;
 
-        this.credits += 3;
-
         if (this.studyHours > 10) {
             grade = 100;
         } else if (this.studyHours > 8) {
@@ -51,6 +51,21 @@ public class Student extends Person {
         } else
             grade = 30;
         grades.add(grade);
+
+        if (grade >= 50) {
+            this.credits += 3.0;
+            this.studyHours = 0;
+        } else
+            System.out.println("You'll have to take this course again next semester.");
+            this.studyHours = 0;
+
+        if (grades.size() % 10 == 0)
+            this.completeYear();
+
+    }
+
+    public void completeYear() {
+        this.year += 1;
     }
 
     public void graduate() {
