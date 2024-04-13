@@ -1,4 +1,4 @@
-package SarembaMitchell_Lab7;
+package sarembamitchell_lab7;
 
 import java.util.Arrays;
 

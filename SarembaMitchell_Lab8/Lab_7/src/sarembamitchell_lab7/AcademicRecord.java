@@ -1,4 +1,6 @@
-package SarembaMitchell_Lab7;
+package sarembamitchell_lab7;
+
+import sarembamitchell_lab8.GraduateStudent;
 
 public class AcademicRecord {
     /**

@@ -1,4 +1,4 @@
-package SarembaMitchell_Lab7;
+package sarembamitchell_lab7;
 
 /**
  * The Point class is used to create an object that represents a point (an x and y coordinate) on a cartesian plane

@@ -12,6 +12,9 @@ public class Student extends Person {
      * Represents the school that every Student goes to.
      */
     public static String school = "Camosun College";
+    /**
+     * Keeps track of the assingment of student ID's.
+     */
     public static int idCounter = 100;
 
     /**

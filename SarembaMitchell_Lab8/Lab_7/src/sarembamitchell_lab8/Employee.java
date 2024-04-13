@@ -32,12 +32,12 @@ public class Employee extends Person {
     }
 
     /**
-     * Allows employees to take a coffee break at 
+     * Allows employees to take a coffee break at the local cafe
      */
     public void coffeeBreak(){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Welcome to Sam!");
+        System.out.println("Welcome to Smeagols!");
         System.out.print("Please enter your order.\n\n1 = Espresso\n2 = Cappuccino\n3 = Americano\n4 = Drip\n");
         
         if (input.hasNextInt()) {

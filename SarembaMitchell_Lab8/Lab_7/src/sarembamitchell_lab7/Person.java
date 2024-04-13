@@ -1,4 +1,4 @@
-package SarembaMitchell_Lab7;
+package sarembamitchell_lab7;
 
 public class Person {
     /**
@@ -54,6 +54,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person:\n" + this.firstName + " " + this.lastName + "\n(" + this.ID + ")";
+        return this.firstName + " " + this.lastName + "\n(" + this.ID + ")";
     }
 }
